@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-07-15T14:42:25Z" name="Suite" finished-at="2020-07-15T14:43:02Z" duration-ms="37108">
+    <groups>
+    </groups>
+    <test started-at="2020-07-15T14:42:25Z" name="Test" finished-at="2020-07-15T14:43:02Z" duration-ms="37108">
+      <class name="resources.ShoppingCartTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:resources.ShoppingCartTest@7c711375]" started-at="2020-07-15T20:12:25Z" name="initialize" finished-at="2020-07-15T20:12:29Z" duration-ms="3648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="shop()[pri:0, instance:resources.ShoppingCartTest@7c711375]" started-at="2020-07-15T20:12:29Z" name="shop" finished-at="2020-07-15T20:13:02Z" duration-ms="33453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shop -->
+      </class> <!-- resources.ShoppingCartTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

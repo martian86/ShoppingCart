@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="resources.Listeners"/>
+  </listeners>
+  <test parallel="tests" name="Test2(failed)" preserve-order="true">
+    <classes>
+      <class name="resources.getGoogleTest">
+        <methods>
+          <include name="init"/>
+          <include name="getURL"/>
+        </methods>
+      </class> <!-- resources.getGoogleTest -->
+      <class name="resources.ShoppingCartTest">
+        <methods>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- resources.ShoppingCartTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test parallel="tests" name="Test1(failed)" preserve-order="true">
+    <classes>
+      <class name="resources.getGoogleTest">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- resources.getGoogleTest -->
+      <class name="resources.ShoppingCartTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="shop"/>
+        </methods>
+      </class> <!-- resources.ShoppingCartTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
