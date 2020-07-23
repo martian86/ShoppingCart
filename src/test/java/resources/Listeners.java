@@ -22,7 +22,7 @@ public class Listeners extends Base implements ITestListener {
 		// TODO Auto-generated method stub
 		test = extent.createTest(result.getMethod().getMethodName());
 		threadLocal.set(test);
-		//Now you can replace test object with threadLocal.get() everywhere.
+		//Now you can replace test object with threadLocal.get() everywhere..
 		
 		try {
 			logFile = (Logger) result.getTestClass().getRealClass().getDeclaredField("logFile").get(result.getInstance());
