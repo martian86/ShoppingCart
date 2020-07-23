@@ -11,15 +11,9 @@
       <class name="resources.ShoppingCartTest"/>
        <class name="resources.getGoogleTest"/> 
     </classes>
-  </test> 
-  <test thread-count="5" name="Test2">
-    <classes>
-     <class name="resources.ShoppingCartTest"/>
-      <class name="resources.getGoogleTest"/>
-    </classes>
-  </test> 
+  </test>
   
-    <test thread-count="5" name="Test3">
+    <test thread-count="5" name="Test2">
     <classes>
       <class name="resources.SpiceJetE2E"/>
     </classes>
