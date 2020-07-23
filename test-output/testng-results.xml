@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="0" failed="1" skipped="0">
+<testng-results total="8" passed="4" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-18T11:48:55Z" name="Default suite" finished-at="2020-07-18T11:49:01Z" duration-ms="5393">
+  <suite started-at="2020-07-23T10:37:07Z" name="Suite" finished-at="2020-07-23T10:38:06Z" duration-ms="58919">
     <groups>
     </groups>
-    <test started-at="2020-07-18T11:48:55Z" name="Default test" finished-at="2020-07-18T11:49:01Z" duration-ms="5393">
+    <test started-at="2020-07-23T10:37:07Z" name="Test1" finished-at="2020-07-23T10:37:30Z" duration-ms="23685">
       <class name="resources.getGoogleTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:resources.getGoogleTest@558bdf1f]" started-at="2020-07-18T17:18:55Z" name="init" finished-at="2020-07-18T17:18:59Z" duration-ms="4289" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="getURL()[pri:0, instance:resources.getGoogleTest@558bdf1f]" started-at="2020-07-18T17:18:59Z" name="getURL" finished-at="2020-07-18T17:19:01Z" duration-ms="1082" status="FAIL">
+        <test-method signature="getURL()[pri:0, instance:resources.getGoogleTest@7d61eb55]" started-at="2020-07-23T16:07:29Z" name="getURL" finished-at="2020-07-23T16:07:30Z" duration-ms="1134" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Google123] but found [Google]]]>
@@ -37,17 +33,13 @@
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
-	at org.testng.TestNG.run(TestNG.java:1030)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
@@ -55,6 +47,215 @@
           </reporter-output>
         </test-method> <!-- getURL -->
       </class> <!-- resources.getGoogleTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="resources.ShoppingCartTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:resources.ShoppingCartTest@2e570ded]" started-at="2020-07-23T16:07:07Z" name="initialize" finished-at="2020-07-23T16:07:11Z" duration-ms="3787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method is-config="true" signature="init()[pri:0, instance:resources.getGoogleTest@7d61eb55]" started-at="2020-07-23T16:07:11Z" name="init" finished-at="2020-07-23T16:07:14Z" duration-ms="3312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="shop()[pri:0, instance:resources.ShoppingCartTest@2e570ded]" started-at="2020-07-23T16:07:14Z" name="shop" finished-at="2020-07-23T16:07:28Z" duration-ms="14541" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING] but found [123]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING] but found [123]
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:171)
+	at org.testng.Assert.assertEquals(Assert.java:181)
+	at resources.ShoppingCartTest.shop(ShoppingCartTest.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shop -->
+      </class> <!-- resources.ShoppingCartTest -->
+    </test> <!-- Test1 -->
+    <test started-at="2020-07-23T10:37:07Z" name="Test2" finished-at="2020-07-23T10:37:31Z" duration-ms="24214">
+      <class name="resources.getGoogleTest">
+        <test-method signature="getURL()[pri:0, instance:resources.getGoogleTest@471a9022]" started-at="2020-07-23T16:07:29Z" name="getURL" finished-at="2020-07-23T16:07:31Z" duration-ms="1138" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Google123] but found [Google]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Google123] but found [Google]
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:171)
+	at org.testng.Assert.assertEquals(Assert.java:181)
+	at resources.getGoogleTest.getURL(getGoogleTest.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURL -->
+      </class> <!-- resources.getGoogleTest -->
+      <class name="resources.ShoppingCartTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:resources.ShoppingCartTest@dc9876b]" started-at="2020-07-23T16:07:07Z" name="initialize" finished-at="2020-07-23T16:07:11Z" duration-ms="4133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method is-config="true" signature="init()[pri:0, instance:resources.getGoogleTest@471a9022]" started-at="2020-07-23T16:07:11Z" name="init" finished-at="2020-07-23T16:07:15Z" duration-ms="3655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="shop()[pri:0, instance:resources.ShoppingCartTest@dc9876b]" started-at="2020-07-23T16:07:15Z" name="shop" finished-at="2020-07-23T16:07:29Z" duration-ms="14282" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING] but found [123]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING] but found [123]
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:171)
+	at org.testng.Assert.assertEquals(Assert.java:181)
+	at resources.ShoppingCartTest.shop(ShoppingCartTest.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shop -->
+      </class> <!-- resources.ShoppingCartTest -->
+    </test> <!-- Test2 -->
+    <test started-at="2020-07-23T10:37:07Z" name="Test3" finished-at="2020-07-23T10:38:06Z" duration-ms="58919">
+      <class name="resources.SpiceJetE2E">
+        <test-method signature="bookTickets(java.lang.String, java.lang.String)[pri:0, instance:resources.SpiceJetE2E@e6516e]" started-at="2020-07-23T16:07:07Z" name="bookTickets" data-provider="getSourceDestCityfromDB" finished-at="2020-07-23T16:07:27Z" duration-ms="19511" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bengaluru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mumbai]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookTickets -->
+        <test-method signature="bookTickets(java.lang.String, java.lang.String)[pri:0, instance:resources.SpiceJetE2E@e6516e]" started-at="2020-07-23T16:07:27Z" name="bookTickets" data-provider="getSourceDestCityfromDB" finished-at="2020-07-23T16:07:42Z" duration-ms="15190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chennai]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mumbai]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookTickets -->
+        <test-method signature="bookTickets(java.lang.String, java.lang.String)[pri:0, instance:resources.SpiceJetE2E@e6516e]" started-at="2020-07-23T16:07:42Z" name="bookTickets" data-provider="getSourceDestCityfromDB" finished-at="2020-07-23T16:07:55Z" duration-ms="12722" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Coimbatore]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chennai]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookTickets -->
+        <test-method signature="bookTickets(java.lang.String, java.lang.String)[pri:0, instance:resources.SpiceJetE2E@e6516e]" started-at="2020-07-23T16:07:55Z" name="bookTickets" data-provider="getSourceDestCityfromDB" finished-at="2020-07-23T16:08:06Z" duration-ms="11064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ahmedabad]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Madurai]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookTickets -->
+      </class> <!-- resources.SpiceJetE2E -->
+    </test> <!-- Test3 -->
+  </suite> <!-- Suite -->
 </testng-results>

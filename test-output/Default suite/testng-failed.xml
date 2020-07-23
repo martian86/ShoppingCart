@@ -3,12 +3,12 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)" preserve-order="true">
     <classes>
-      <class name="resources.getGoogleTest">
+      <class name="resources.SpiceJetE2E">
         <methods>
+          <include name="bookTickets" invocation-numbers="1 2 3"/>
           <include name="init"/>
-          <include name="getURL"/>
         </methods>
-      </class> <!-- resources.getGoogleTest -->
+      </class> <!-- resources.SpiceJetE2E -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

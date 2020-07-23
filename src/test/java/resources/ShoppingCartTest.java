@@ -34,7 +34,7 @@ public class ShoppingCartTest extends Base {
 	public void shop() throws InterruptedException
 	{
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
-		String [] products = {"Brocolli"};
+		String [] products = {"Brocolli","Cucumber","Beetroot"};
 		List<String> myList = Arrays.asList(products);
 		
 		ShoppingCartPageObject shopping = new ShoppingCartPageObject(driver);
@@ -76,7 +76,7 @@ public class ShoppingCartTest extends Base {
 		finalPage.clickProceedBtn().click();
 		logFile.error("Test executed successfully.");
 		
-		
+		driver.close();
 	}
 
 }
