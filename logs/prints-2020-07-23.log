@@ -2,3 +2,9 @@
 16:07:29.873 [TestNG] ERROR resources.Base - Method shop(): Test failed
 16:07:30.925 [TestNG] ERROR resources.Base - Method getURL(): Test failed
 16:07:31.455 [TestNG] ERROR resources.Base - Method getURL(): Test failed
+16:30:45.980 [TestNG] ERROR resources.Base - Method shop(): Test failed
+16:30:46.117 [TestNG] ERROR resources.Base - Method shop(): Test failed
+16:30:47.628 [TestNG] ERROR resources.Base - Method getURL(): Test failed
+16:30:47.933 [TestNG] ERROR resources.Base - Method getURL(): Test failed
+16:36:17.586 [TestNG] ERROR resources.Base - Method shop(): Test failed
+16:36:18.818 [TestNG] ERROR resources.Base - Method getURL(): Test failed

@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 4 failed,   4 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,16 +102,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="resources.getGoogleTest" class="method navigator-link" hash-for-method="getURL">getURL</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="resources.getGoogleTest" class="method navigator-link" hash-for-method="getURL">getURL</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="resources.ShoppingCartTest" class="method navigator-link" hash-for-method="shop">shop</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -130,17 +120,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="resources.SpiceJetE2E" class="method navigator-link" hash-for-method="bookTickets(Chennai, Mumbai)">bookTickets(Chennai, Mumbai)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="resources.SpiceJetE2E" class="method navigator-link" hash-for-method="bookTickets(Coimbatore, Chennai)">bookTickets(Coimbatore, Chennai)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="resources.SpiceJetE2E" class="method navigator-link" hash-for-method="bookTickets(Bengaluru, Mumbai)">bookTickets(Bengaluru, Mumbai)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="resources.SpiceJetE2E" class="method navigator-link" hash-for-method="bookTickets(Chennai, Mumbai)">bookTickets(Chennai, Mumbai)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -166,48 +156,6 @@
               <span class="class-name">resources.getGoogleTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getURL">
-                  </a> <!-- getURL -->
-                  <span class="method-name">getURL</span>
-                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [Google123] but found [Google]
-	at resources.getGoogleTest.getURL(getGoogleTest.java:27)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 21 stack frames<br/> java.lang.AssertionError: expected [Google123] but found [Google]
-	at org.testng.Assert.fail(Assert.java:89)
-	at org.testng.Assert.failNotEquals(Assert.java:489)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:171)
-	at org.testng.Assert.assertEquals(Assert.java:181)
-	at resources.getGoogleTest.getURL(getGoogleTest.java:27)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-"</b><br>org.testng.Assert.fail(Assert.java:89)<br>org.testng.Assert.failNotEquals(Assert.java:489)<br>org.testng.Assert.assertEquals(Assert.java:118)<br>org.testng.Assert.assertEquals(Assert.java:171)<br>org.testng.Assert.assertEquals(Assert.java:181)<br>resources.getGoogleTest.getURL(getGoogleTest.java:27)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:715)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.access$000(SuiteRunner.java:37)<br>org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)<br>org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)<br>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)<br>java.base/java.lang.Thread.run(Thread.java:832)<br>
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="getURL">
@@ -300,48 +248,6 @@
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="shop">
-                  </a> <!-- shop -->
-                  <span class="method-name">shop</span>
-                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING] but found [123]
-	at resources.ShoppingCartTest.shop(ShoppingCartTest.java:63)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 21 stack frames<br/> java.lang.AssertionError: expected [AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING] but found [123]
-	at org.testng.Assert.fail(Assert.java:89)
-	at org.testng.Assert.failNotEquals(Assert.java:489)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:171)
-	at org.testng.Assert.assertEquals(Assert.java:181)
-	at resources.ShoppingCartTest.shop(ShoppingCartTest.java:63)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-"</b><br>org.testng.Assert.fail(Assert.java:89)<br>org.testng.Assert.failNotEquals(Assert.java:489)<br>org.testng.Assert.assertEquals(Assert.java:118)<br>org.testng.Assert.assertEquals(Assert.java:171)<br>org.testng.Assert.assertEquals(Assert.java:181)<br>resources.ShoppingCartTest.shop(ShoppingCartTest.java:63)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:715)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.access$000(SuiteRunner.java:37)<br>org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)<br>org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)<br>java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br>java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)<br>java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)<br>java.base/java.lang.Thread.run(Thread.java:832)<br>
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
@@ -350,6 +256,14 @@
               <span class="class-name">resources.SpiceJetE2E</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bookTickets(Chennai, Mumbai)">
+                  </a> <!-- bookTickets(Chennai, Mumbai) -->
+                  <span class="method-name">bookTickets</span>
+                  <span class="parameters">(Chennai, Mumbai)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="bookTickets(Coimbatore, Chennai)">
@@ -364,14 +278,6 @@
                   </a> <!-- bookTickets(Bengaluru, Mumbai) -->
                   <span class="method-name">bookTickets</span>
                   <span class="parameters">(Bengaluru, Mumbai)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="bookTickets(Chennai, Mumbai)">
-                  </a> <!-- bookTickets(Chennai, Mumbai) -->
-                  <span class="method-name">bookTickets</span>
-                  <span class="parameters">(Chennai, Mumbai)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -405,15 +311,9 @@
   &lt;/test&gt; &lt;!-- Test1 --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test2&quot; preserve-order=&quot;true&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;resources.ShoppingCartTest&quot;/&gt;
-      &lt;class name=&quot;resources.getGoogleTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test2 --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test3&quot; preserve-order=&quot;true&quot;&gt;
-    &lt;classes&gt;
       &lt;class name=&quot;resources.SpiceJetE2E&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test3 --&gt;
+  &lt;/test&gt; &lt;!-- Test2 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -428,10 +328,7 @@
                 <span class="test-name">Test1 (2 classes)</span>
               </li>
               <li>
-                <span class="test-name">Test2 (2 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">Test3 (1 class)</span>
+                <span class="test-name">Test2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -457,39 +354,31 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'bookTickets')
 data.setCell(0, 2, 'resources.SpiceJetE2E')
-data.setCell(0, 3, 19511);
+data.setCell(0, 3, 15307);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'bookTickets')
-data.setCell(1, 2, 'resources.SpiceJetE2E')
-data.setCell(1, 3, 15190);
+data.setCell(1, 1, 'shop')
+data.setCell(1, 2, 'resources.ShoppingCartTest')
+data.setCell(1, 3, 13482);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'shop')
-data.setCell(2, 2, 'resources.ShoppingCartTest')
-data.setCell(2, 3, 14541);
+data.setCell(2, 1, 'bookTickets')
+data.setCell(2, 2, 'resources.SpiceJetE2E')
+data.setCell(2, 3, 12703);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'shop')
-data.setCell(3, 2, 'resources.ShoppingCartTest')
-data.setCell(3, 3, 14282);
+data.setCell(3, 1, 'bookTickets')
+data.setCell(3, 2, 'resources.SpiceJetE2E')
+data.setCell(3, 3, 12510);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'bookTickets')
 data.setCell(4, 2, 'resources.SpiceJetE2E')
-data.setCell(4, 3, 12722);
+data.setCell(4, 3, 12287);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'bookTickets')
-data.setCell(5, 2, 'resources.SpiceJetE2E')
-data.setCell(5, 3, 11064);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'getURL')
-data.setCell(6, 2, 'resources.getGoogleTest')
-data.setCell(6, 3, 1138);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'getURL')
-data.setCell(7, 2, 'resources.getGoogleTest')
-data.setCell(7, 3, 1134);
+data.setCell(5, 1, 'getURL')
+data.setCell(5, 2, 'resources.getGoogleTest')
+data.setCell(5, 3, 937);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -525,27 +414,19 @@ return data;
                 <span class="method-name">initialize</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">resources.SpiceJetE2E</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">bookTickets(Bengaluru, Mumbai)</span>
-                <span class="method-start">416 ms</span>
+                <span class="method-start">260 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">resources.getGoogleTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">init</span>
-                <span class="method-start">3787 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
-                <span class="method-name">init</span>
-                <span class="method-start">4133 ms</span>
+                <span class="method-start">3455 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -554,20 +435,14 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">shop</span>
-                <span class="method-start">7100 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">shop</span>
-                <span class="method-start">7789 ms</span>
+                <span class="method-start">6553 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">resources.SpiceJetE2E</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">bookTickets(Chennai, Mumbai)</span>
-                <span class="method-start">19933 ms</span>
+                <span class="method-start">15575 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -576,24 +451,18 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">getURL</span>
-                <span class="method-start">22183 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">getURL</span>
-                <span class="method-start">22629 ms</span>
+                <span class="method-start">20544 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">resources.SpiceJetE2E</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">bookTickets(Coimbatore, Chennai)</span>
-                <span class="method-start">35125 ms</span>
+                <span class="method-start">28280 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">bookTickets(Ahmedabad, Madurai)</span>
-                <span class="method-start">47848 ms</span>
+                <span class="method-start">40569 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
