@@ -24,7 +24,7 @@ public class getGoogleTest extends Base {
 	{
 		driver.get("https://www.google.com");
 		logFile.info("Starting test to check google home page");
-		Assert.assertEquals(driver.getTitle(), "Google123");
+		Assert.assertEquals(driver.getTitle(), "Google");
 		driver.close();
 	}
 
