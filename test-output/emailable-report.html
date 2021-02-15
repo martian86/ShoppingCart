@@ -29,52 +29,65 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">21.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">Test2</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">53.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="total"><td>Total</td>
-<td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">53.1 seconds</td><td colspan="2">&nbsp;</td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">4</td><td class="numi">79.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <a id="summary"></a>
 <table cellspacing=0 cellpadding=0 class="passed">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Test1 &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">resources.ShoppingCartTest<td><a href="#m1"><b>shop</b>  </a></td><td class="numi">1</td><td>1595502363601</td><td class="numi">13482</td></tr>
-<tr class="failedeven"><td rowspan="1">resources.getGoogleTest<td><a href="#m2"><b>getURL</b>  </a></td><td class="numi">1</td><td>1595502377592</td><td class="numi">937</td></tr>
-<tr><th colspan="4">Test2 &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">resources.SpiceJetE2E<td><a href="#m3"><b>bookTickets</b>  </a></td><td class="numi">4</td><td>1595502357308</td><td class="numi">52819</td></tr><tr class="passedodd"><td><a href="#m4"><b>bookTickets</b>  </a></td><td class="numi">4</td><td>1595502357308</td><td class="numi">52819</td></tr><tr class="passedodd"><td><a href="#m5"><b>bookTickets</b>  </a></td><td class="numi">4</td><td>1595502357308</td><td class="numi">52819</td></tr><tr class="passedodd"><td><a href="#m6"><b>bookTickets</b>  </a></td><td class="numi">4</td><td>1595502357308</td><td class="numi">52819</td></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="4">resources.SpiceJetE2E<td><a href="#m1"><b>bookTickets</b>  </a></td><td class="numi">4</td><td>1599062314582</td><td class="numi">79597</td></tr><tr class="failedodd"><td><a href="#m2"><b>bookTickets</b>  </a></td><td class="numi">4</td><td>1599062314582</td><td class="numi">79597</td></tr><tr class="failedodd"><td><a href="#m3"><b>bookTickets</b>  </a></td><td class="numi">4</td><td>1599062314582</td><td class="numi">79597</td></tr><tr class="failedodd"><td><a href="#m4"><b>bookTickets</b>  </a></td><td class="numi">4</td><td>1599062314582</td><td class="numi">79597</td></tr>
 </table>
-<h1>Test1</h1>
-<a id="m1"></a><h2>resources.getGoogleTest:getURL</h2>
-<div style="padding-left:3em">
-<p>expected [Google123] but found [Google]</p>
-org.testng.Assert.fail(Assert.java:89)
-<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
-<br/>at org.testng.Assert.assertEquals(Assert.java:118)
-<br/>at org.testng.Assert.assertEquals(Assert.java:171)
-<br/>at org.testng.Assert.assertEquals(Assert.java:181)
-<br/>at resources.getGoogleTest.getURL(getGoogleTest.java:27)
-<br/>21 lines not shown
-</div>
+<h1>Default test</h1>
+<a id="m1"></a><h2>resources.SpiceJetE2E:bookTickets</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">Ahmedabad</td>
+<td style="padding-left:.5em;padding-right:2em">Madurai</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>Index 17 out of bounds for length 0</p>
+java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+<br/>at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+<br/>at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+<br/>at java.base/java.util.Objects.checkIndex(Objects.java:373)
+<br/>at java.base/java.util.ArrayList.get(ArrayList.java:426)
+<br/>at resources.SpiceJetE2E.bookTickets(SpiceJetE2E.java:75)
+<br/>25 lines not shown
+</td></tr>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m2"></a><h2>resources.ShoppingCartTest:shop</h2>
-<div style="padding-left:3em">
-<p>expected [AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING] but found [123]</p>
-org.testng.Assert.fail(Assert.java:89)
-<br/>at org.testng.Assert.failNotEquals(Assert.java:489)
-<br/>at org.testng.Assert.assertEquals(Assert.java:118)
-<br/>at org.testng.Assert.assertEquals(Assert.java:171)
-<br/>at org.testng.Assert.assertEquals(Assert.java:181)
-<br/>at resources.ShoppingCartTest.shop(ShoppingCartTest.java:63)
-<br/>21 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Test2</h1>
-<a id="m3"></a><h2>resources.SpiceJetE2E:bookTickets</h2>
+<a id="m2"></a><h2>resources.SpiceJetE2E:bookTickets</h2>
 <table cellspacing=0 cellpadding=0 class="param">
 <tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
 <tr><td style="padding-left:.5em;padding-right:2em">Chennai</td>
 <td style="padding-left:.5em;padding-right:2em">Mumbai</td>
 </tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>Index 17 out of bounds for length 0</p>
+java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+<br/>at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+<br/>at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+<br/>at java.base/java.util.Objects.checkIndex(Objects.java:373)
+<br/>at java.base/java.util.ArrayList.get(ArrayList.java:426)
+<br/>at resources.SpiceJetE2E.bookTickets(SpiceJetE2E.java:75)
+<br/>25 lines not shown
+</td></tr>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>resources.SpiceJetE2E:bookTickets</h2>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
+<tr><td style="padding-left:.5em;padding-right:2em">Bengaluru</td>
+<td style="padding-left:.5em;padding-right:2em">Mumbai</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>Index 17 out of bounds for length 0</p>
+java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+<br/>at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+<br/>at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+<br/>at java.base/java.util.Objects.checkIndex(Objects.java:373)
+<br/>at java.base/java.util.ArrayList.get(ArrayList.java:426)
+<br/>at resources.SpiceJetE2E.bookTickets(SpiceJetE2E.java:75)
+<br/>25 lines not shown
+</td></tr>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <a id="m4"></a><h2>resources.SpiceJetE2E:bookTickets</h2>
 <table cellspacing=0 cellpadding=0 class="param">
@@ -82,19 +95,15 @@ org.testng.Assert.fail(Assert.java:89)
 <tr><td style="padding-left:.5em;padding-right:2em">Coimbatore</td>
 <td style="padding-left:.5em;padding-right:2em">Chennai</td>
 </tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m5"></a><h2>resources.SpiceJetE2E:bookTickets</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">Bengaluru</td>
-<td style="padding-left:.5em;padding-right:2em">Mumbai</td>
-</tr>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<a id="m6"></a><h2>resources.SpiceJetE2E:bookTickets</h2>
-<table cellspacing=0 cellpadding=0 class="param">
-<tr><th style="padding-left:1em;padding-right:1em">Parameter #1</th><th style="padding-left:1em;padding-right:1em">Parameter #2</th></tr>
-<tr><td style="padding-left:.5em;padding-right:2em">Ahmedabad</td>
-<td style="padding-left:.5em;padding-right:2em">Madurai</td>
-</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>Index 17 out of bounds for length 0</p>
+java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+<br/>at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+<br/>at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+<br/>at java.base/java.util.Objects.checkIndex(Objects.java:373)
+<br/>at java.base/java.util.ArrayList.get(ArrayList.java:426)
+<br/>at resources.SpiceJetE2E.bookTickets(SpiceJetE2E.java:75)
+<br/>25 lines not shown
+</td></tr>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

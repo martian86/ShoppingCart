@@ -5,8 +5,7 @@
     <classes>
       <class name="resources.SpiceJetE2E">
         <methods>
-          <include name="bookTickets" invocation-numbers="1 2 3"/>
-          <include name="init"/>
+          <include name="bookTickets" invocation-numbers="0 1 2 3"/>
         </methods>
       </class> <!-- resources.SpiceJetE2E -->
     </classes>

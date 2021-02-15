@@ -40,12 +40,12 @@ public class Base {
 		}
 		else if(browser.equals("firefox"))
 		{
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\aniru\\Documents\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\aniru\\Documents\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		else if(browser.equals("IE"))
 		{
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\aniru\\Documents\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", "C:\\Users\\aniru\\Documents\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		}
 		
